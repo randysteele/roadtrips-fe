@@ -5,11 +5,10 @@ import DestinationContainer from './containers/DestinationContainer';
 function App() {
   return (
     <div className="App">
-      <h1>R o a d T r i p s</h1>
               <DestinationContainer />
 
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+       <header className="RoadTrips">
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -20,8 +19,8 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-      </header> */}
+        </a> */}
+      </header> */
     </div>
   );
 }

@@ -5,7 +5,6 @@ import DestinationContainer from './containers/DestinationContainer';
 function App() {
   return (
     <div className="App">
-      <h1>R o a d T r i p s</h1>
               <DestinationContainer />
 
       {/* <header className="App-header">
