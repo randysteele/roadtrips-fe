@@ -6,7 +6,7 @@ class DestinationContainer extends React.Component {
 render(){
     return(
         <div>
-            <DestinationInput destinations={this.props.destinations}/>
+            <DestinationInput destinations={this.props.destinaitons}/>
 
 
         </div>
