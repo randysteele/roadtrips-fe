@@ -14,7 +14,7 @@ render(){
     return(
         <div>
             <DestinationInput destinations={this.props.destinations}/>
-            <DestinationList  destinations={this.props.destinations}/>
+            <DestinationList destinations={this.props.destinations}/>
         </div>
     )
 }
