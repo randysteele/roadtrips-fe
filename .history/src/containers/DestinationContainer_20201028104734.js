@@ -3,8 +3,6 @@ import {connect} from 'react-redux'
 import {fetchDestinations} from '../actions/fetchDestinations'
 import DestinationInput from '../components/DestinationInput'
 import DestinationList from '../components/DestinationList'
-import DestinationShow from '../components/DestinationShow'
-
 
 class DestinationContainer extends React.Component {
 
@@ -17,7 +15,7 @@ render(){
         <div>
             <DestinationInput destinations={this.props.destinations}/>
             <DestinationList  destinations={this.props.destinations}/>
-            <DestinationShow destinations={this.props.destinations}/>
+            <DestinaitonShow destinations={this.props.destinations}/>
         </div>
     )
 }

@@ -3,8 +3,6 @@ import {connect} from 'react-redux'
 import {fetchDestinations} from '../actions/fetchDestinations'
 import DestinationInput from '../components/DestinationInput'
 import DestinationList from '../components/DestinationList'
-import DestinationShow from '../components/DestinationShow'
-
 
 class DestinationContainer extends React.Component {
 

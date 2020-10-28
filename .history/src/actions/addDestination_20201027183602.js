@@ -12,7 +12,7 @@ export const addDestination = (data, history) => {
         .then(response => response.json())
         .then(destination => {
             dispatch({type: 'ADD_DESTINATIONS', payload: destination})
-            // history.push(`/destinations/${destination.id}`)
+            history.push(`/destinations/${destination.id}`)
         })
 
 
