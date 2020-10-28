@@ -10,8 +10,8 @@ class DestinationEdit extends React.Component {
         travel_time: ''
     }
 
-    handleChange (event) {
-        this.setState({
+    handleChange = (event) > {
+        this:setState({
             [event.target.name]: event.target.value
         })
     }

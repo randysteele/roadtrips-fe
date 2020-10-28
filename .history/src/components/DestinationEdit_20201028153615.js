@@ -10,8 +10,8 @@ class DestinationEdit extends React.Component {
         travel_time: ''
     }
 
-    handleChange (event) {
-        this.setState({
+    handleChange = (event) > {
+        this:setState({
             [event.target.name]: event.target.value
         })
     }
@@ -38,7 +38,7 @@ class DestinationEdit extends React.Component {
                 <label>City:</label>
                 <input type="text" placeholder="Destination City" value={this.state.city} name="city" onChange={this.handleChange}></input>
                 <label>State</label>
-                <input type="text" placeholder="Destination State" value={this.state.state} name="state" onChange={this.handleChange}></input></form>
+                <input type="text" placeholder="Destination State" value={this.state.state} name="state" onChange={tis.handleChange}></input></form>
                 <label>Comment:</label>
                 <input type="text" placeholder="Comment" value={this.state.comment} name="comment" onChange={this.handleChange}></input>
                 <label>Travel Time:</label>
