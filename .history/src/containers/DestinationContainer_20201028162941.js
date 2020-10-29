@@ -5,10 +5,8 @@ import DestinationEdit from '../components/DestinationEdit'
 import DestinationInput from '../components/DestinationInput'
 import DestinationList from '../components/DestinationList'
 import DestinationShow from '../components/DestinationShow'
-import {
-    Switch,
-    Route,
-  } from "react-router-dom";
+import {Route} from 'react-router'
+
 
 class DestinationContainer extends React.Component {
 
@@ -16,18 +14,19 @@ class DestinationContainer extends React.Component {
         this.props.fetchDestinations()
     }  
 
-    render(){        
-        return (
-          <div>  
-            <DestinationInput destinations={this.props.destinations}/>
-            <DestinationList  destinations={this.props.destinations}/>
-            <DestinationShow destinations={this.props.destinations}/>
-            {/* <DestinationEdit destinations={this.props.destinations}/>            */}
-          </div>
-        )
-            
-         }
-      }
+render(){
+    return(
+        <div>
+            <Router>
+            <Route path='/destinations/new' component={DestinationInput}/>
+            <Route path='/destinations/:id' render={(routerProps) => <DestinationShow {...routerProps} destinations={this.props.destinations}/>}/>
+            <route path='/destinations' render={(routerProps) => <DestinationList {...routerProps} destinations={this.props.destinations}/>}/>
+            </Router> </div>
+        
+    )
+}
+}
+
 const mapStateToProps = state => {
     return {
         destinations: state.destinations

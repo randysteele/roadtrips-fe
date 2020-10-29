@@ -6,8 +6,10 @@ import DestinationInput from '../components/DestinationInput'
 import DestinationList from '../components/DestinationList'
 import DestinationShow from '../components/DestinationShow'
 import {
+    BrowserRouter as Router,
     Switch,
     Route,
+    Link
   } from "react-router-dom";
 
 class DestinationContainer extends React.Component {
@@ -19,10 +21,15 @@ class DestinationContainer extends React.Component {
     render(){        
         return (
           <div>  
-            <DestinationInput destinations={this.props.destinations}/>
-            <DestinationList  destinations={this.props.destinations}/>
-            <DestinationShow destinations={this.props.destinations}/>
-            {/* <DestinationEdit destinations={this.props.destinations}/>            */}
+          
+  
+            <Switch>
+           <Route  path='/destinations/new' component={DestinationsInput}/>     
+           <Route  path='/destinations/:id' render={(routerProps) => <DestinationShow {...routerProps} destinations={this.props.destinations}/>}/>   
+           <Route  path='/destinations' render={(routerProps) => <DestinationList {...routerProps} destinations={this.props.destinations}/>}/>
+           </Switch><br></br>
+  
+           
           </div>
         )
             

@@ -18,12 +18,9 @@ const store = createStore(destinations, composeEnhancer(applyMiddleware(thunk)))
 ReactDOM.render(
     <Provider store={store}>
       <Router>
-      <Auth0Provider>
     <App />
-    </Auth0Provider>
-    </Router>    
+    </Router>
   </Provider>
-  
 ,
   document.getElementById('root')
 );

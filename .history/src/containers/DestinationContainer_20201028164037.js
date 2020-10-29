@@ -6,8 +6,10 @@ import DestinationInput from '../components/DestinationInput'
 import DestinationList from '../components/DestinationList'
 import DestinationShow from '../components/DestinationShow'
 import {
+    BrowserRouter as Router,
     Switch,
     Route,
+    Link
   } from "react-router-dom";
 
 class DestinationContainer extends React.Component {
@@ -16,18 +18,20 @@ class DestinationContainer extends React.Component {
         this.props.fetchDestinations()
     }  
 
-    render(){        
-        return (
-          <div>  
-            <DestinationInput destinations={this.props.destinations}/>
-            <DestinationList  destinations={this.props.destinations}/>
-            <DestinationShow destinations={this.props.destinations}/>
-            {/* <DestinationEdit destinations={this.props.destinations}/>            */}
-          </div>
-        )
-            
-         }
-      }
+render(){
+    return(
+        <div>
+        <Switch>           
+            <Route path='/destinations/new' component={DestinationInput}/>
+            <Route path='/destinations/:id' render={(routerProps) => <DestinationShow {...routerProps} destinations={this.props.destinations}/>}/>
+            <Route path='/destinations' render={(routerProps) => <DestinationList {...routerProps} destinations={this.props.destinations}/>}/>
+             </Switch><br></br>
+             </div>
+        
+    )
+}
+}
+
 const mapStateToProps = state => {
     return {
         destinations: state.destinations

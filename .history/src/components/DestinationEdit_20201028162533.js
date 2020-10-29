@@ -1,6 +1,5 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {editDestination} from '../actions/editDestination'
 
 
 class DestinationEdit extends React.Component {
