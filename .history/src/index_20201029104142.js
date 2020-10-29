@@ -22,7 +22,8 @@ ReactDOM.render(
     <App />
     </Auth0ProviderWithHistory>
     </Router>    
-  </Provider>  
+  </Provider>
+  
 ,
   document.getElementById('root')
 );
