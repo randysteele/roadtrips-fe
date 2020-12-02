@@ -45,6 +45,8 @@ h1, h2, h3, h4, h5, ol, p {
 }
 .destinationList {
   border: 1px solid black;
+  border-left: 60;
+  border-right: 100;
   outline-style: solid;
   outline-color: fuchsia;
   outline-width: medium;

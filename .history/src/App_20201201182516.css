@@ -39,7 +39,8 @@ h1, h2, h3, h4, h5, ol, p {
   background-color: rgb(175, 163, 163);
   color: white;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Fantasy", Cottonwood, monospace;
+
   
   
 }
@@ -49,14 +50,12 @@ h1, h2, h3, h4, h5, ol, p {
   outline-color: fuchsia;
   outline-width: medium;
   width: 100%; 
+  position: sticky;
   padding-bottom: 10px;
   margin: 20px auto;
   float: left;
+  
 
-}
-li {
-  list-style-type: square;
-  list-style-position: outside;
 }
 
 

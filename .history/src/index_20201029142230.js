@@ -17,10 +17,7 @@ const store = createStore(destinations, composeEnhancer(applyMiddleware(thunk)))
 
 ReactDOM.render(
   <Router>
-<Auth0ProviderWithHistory
-domain="dev-x7rn9cci.us.auth0.com"
-clientId="kEzX5swFyZDcdio4vAXYaLUwsiv94rVs"
->
+<Auth0ProviderWithHistory>
     <Provider store={store}>
     <App />       
   </Provider>   
