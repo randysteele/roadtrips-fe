@@ -17,8 +17,7 @@ const DestinationShow = (props) => {
 }
 
 export default DestinationShow
-    {/* // this goes in the above div
-                {destination ? destination.name : null} - 
+    {/* //         {destination ? destination.name : null} - 
     //         {destination ? destination.city : null} - 
     //         {destination ? destination.state : null} - 
     //         {destination ? destination.comment: null} -

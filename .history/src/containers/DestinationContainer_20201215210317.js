@@ -19,17 +19,11 @@ class DestinationContainer extends React.Component {
     render(){        
         return (
           <div>  
-            {/* <Switch>
-            <Route  path='/destinations/new' component={DestinationInput}/>
-            <Route  path='/destinations/:id' render={(routerProps) => <DestinationShow {...routerProps} destinations={this.props.destinations}/>}/>
-            <Route  path='destinations'       render={(routerProps) => <DestinationList {...routerProps} destinations={this.props.destinations}/>}/>
-            </Switch>  <br></br>        */}
-              
-            <DestinationInput destinations={this.props.destinations}/>
-            <DestinationList  destinations={this.props.destinations}/>
-            <DestinationShow destinations={this.props.destinations}/>
-            {/* <DestinationEdit destinations={this.props.destinations}/>            */}
-          
+            <Switch>
+            <Route  path='/destination/new' component={DestinationInput}/>
+            <Route path='/destination/:id' render={(routerProps) => <DestinationShow {...routerProps} destinations={this.props.destinations}/>}/>
+            <Route path='destination' render={(routerProps) => <DestinationList {...routerProps} destinations={this.props.destinations}/>}/>
+            </Switch>         
           </div>
         )
             

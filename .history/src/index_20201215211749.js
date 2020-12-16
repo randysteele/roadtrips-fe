@@ -8,7 +8,7 @@ import thunk from 'redux-thunk'
 import { createStore, applyMiddleware, compose} from 'redux'
 import destinations from './reducers/destinations'
 import {BrowserRouter as Router} from 'react-router-dom'
-// import Auth0ProviderWithHistory from "./auth/auth0-provider-with-history";
+import Auth0ProviderWithHistory from "./auth/auth0-provider-with-history";
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
